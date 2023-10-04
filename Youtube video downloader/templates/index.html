@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>YouTube Downloader</title>
+    
+</head>
+<body>
+    <h1>YouTube Downloader</h1>
+    <h2>Download any youtube video by pasting the url of the video</h2>
+    <form action="/download" method="post">
+        <input type="text" name="url" placeholder="Enter YouTube video URL"><br>
+        <input type="submit" value="Download">
+        <h3>See the downloaded video in your Downloads folder</h3>
+    </form>
+</body>
+</html>
